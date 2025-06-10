@@ -1,15 +1,28 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Declare and initialize maintenance costs for each season
+        double springMaintenanceCost = 350.75; // Fixed cost as per instructions
+        double summerMaintenanceCost = 280.54;  // Fixed cost as per instructions
+        double autumnMaintenanceCost = 410.23;  // Fixed cost as per instructions
+        double winterMaintenanceCost = 520.94;  // Fixed cost as per instructions
+
+        // Calculate the total yearly maintenance cost
+        double totalYearlyMaintenanceCost = springMaintenanceCost + summerMaintenanceCost + autumnMaintenanceCost + winterMaintenanceCost;
+
+        // Display the individual seasonal costs and the total yearly cost
+        System.out.println("--- Home Maintenance Costs ---");
+
+        System.out.println("Spring Maintenance Cost: $" + springMaintenanceCost);
+
+        System.out.println("Summer Maintenance Cost: $" + summerMaintenanceCost);
+
+        System.out.println("Autumn Maintenance Cost: $" + autumnMaintenanceCost); // Can we agree autumn is a better name than fall?
+
+        System.out.println("Winter Maintenance Cost: $" + winterMaintenanceCost);
+
+        System.out.println("----------------------------");
+
+        System.out.println("Total Yearly Maintenance Cost: $" + totalYearlyMaintenanceCost);
     }
 }
